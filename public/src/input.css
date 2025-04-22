@@ -33,6 +33,8 @@
     background-image: url("../images/headerBgDesktop.webp");
     background-repeat: no-repeat;
   }
+
+
 }
 
 @theme {
@@ -63,3 +65,21 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .ShopItems{
+    @apply hidden flex-col gap-y-3 pr-10 mt-3 text-sm text-zinc-600 dark:text-white ;
+  }
+
+  .ShopItemOpen{
+    @apply flex ;
+  }
+
+  .ShopItemHover{
+    @apply text-orange-300 transition-all   ;
+  }
+
+  .SubMenu{
+    @apply  flex items-center justify-between
+  }
+}

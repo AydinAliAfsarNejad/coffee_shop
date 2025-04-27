@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coffee Shop</title>
+
     <link rel="icon" href="../images/app-logo.png">
     <link href="./output.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 
@@ -207,7 +207,7 @@
     <!--mobile header-->
     <div class="fixed top-0 left-0 right-0 flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700 z-20 ">
 
-    <!--bras 3 mobile menu-->
+        <!--bras 3 mobile menu-->
         <div id="nav-icon-openBtn" class="text-zinc-700 dark:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -367,32 +367,73 @@
         </div>
         <!--shopping cart-->
         <div class="text-zinc-700 dark:text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-         </svg>
-        </div>
+            <div id="mobile-cart">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </div>
 
-        <div class="fixed top-0 bottom-0 left-0 w-64 pt-3 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all duration-300 overflow-y-auto ">
+
+            <div id="mobile-cart-menu" class="fixed top-0 bottom-0 -left-64 flex flex-col w-64 pt-3 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all duration-300 overflow-y-auto ">
+        
+
             <!--cart header-->
             <div class="flex items-center justify-between w-full py-5 px-4 border-b border-gray-300">
-                <span>
+                <span id="close-cart">
                     <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                         <use href="#x-mark"></use>
                     </svg>
                 </span>
                 <h3 class="text-base font-Dana text-zinc-700 dark:text-white ">سبد خرید</h3>
             </div>
+            <!-- cart main -->
 
+            <div class="mt-5">
+
+                <div class="flex gap-x-1 pb-5 mb-5 border-b border-b-gray-100 dark:border-b-white/10">
+
+                    <img src="../images/products/p1.png" alt="item" class="w-[90px] h-[90px]" >
+                    <div class="flex flex-col justify-between gap-y-1.5" >
+                        <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white line-clamp-2">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h4>
+                        <div>
+                            <span class="text-teal-600 dark:text-emerald-500 text-sm font-DanaMedium tracking-tighter">14.500 تومان تخفیف</span>
+                            <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                175,000 
+                                <span class="font-Dana text-sm">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-x-1 pb-5 mb-5 border-b border-b-gray-100 dark:border-b-white/10">
+
+                    <img src="../images/products/p2.png" alt="item" class="w-[90px] h-[90px]" >
+                    <div class="flex flex-col justify-between gap-y-1.5" >
+                        <h4 class="font-DanaMedium text-sm text-zinc-700 dark:text-white line-clamp-2">
+                            قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                        </h4>
+                        <div>
+                            <span class="text-teal-600 dark:text-emerald-500 text-sm font-DanaMedium tracking-tighter">14.500 تومان تخفیف</span>
+                            <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                175,000 
+                                <span class="font-Dana text-sm">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
             <!--cart footer-->
-            <div class="flex items-center gap-x-4 ">
+            <div class="flex items-end gap-x-4 mt-auto mb-8">
                 <div>
                     <a href="#" class="flex items-center justify-center w-28 h-11 text-white bg-teal-600 dark:bg-emerald-500 rounded-xl">ثبت سفارش</a>
                 </div>
 
 
                 <div>
-                    <span class="font-DanaMedium text-gray300 text-xs tracking-wider">مبلغ قابل پرداخت</span>
+                    <span class="font-DanaMedium text-gray-300 text-xs tracking-tighter">مبلغ قابل پرداخت</span>
                     <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
                         350,000
                         <span class="font-Dana text-xs">تومان</span>
@@ -400,7 +441,7 @@
                 </div>
             </div>
 
-    </div>
+        </div>
 
     <main></main>
 
@@ -408,6 +449,11 @@
 
 <!--    <div class="overlay fixed inset-0 bg-black/40 w-full h-full z-10"></div>-->
 
+
+    <script src="../script/modules/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="../script/DarkMode.js"></script>
     <script src="../script/script.js"></script>
 </body>

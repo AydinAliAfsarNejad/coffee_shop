@@ -76,7 +76,7 @@
 </svg>
 
 <!-- dark:bg-zinc-800-->
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 bg-[url(../images/headerBgMobile.webp)] md:bg-[url(../images/headerBgDesktop.webp)] bg-no-repeat bg-cover bg-[center_top]">
 
     <!-- header -->
     <header class="fixed top-9 right-0 left-0 hidden md:flex w-[98%] lg:w-[90%] h-24 mx-auto bg-black/50 rounded-3xl items-center px-5 lg:px-10 py-5 backdrop-blur-[6px] ">
@@ -203,10 +203,8 @@
         </div>
     </header>
 
-
     <!--mobile header-->
     <div class="fixed top-0 left-0 right-0 flex md:hidden items-center justify-between h-16 px-4 bg-white dark:bg-zinc-700 z-20 ">
-
         <!--bras 3 mobile menu-->
         <div id="nav-icon-openBtn" class="text-zinc-700 dark:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -214,8 +212,6 @@
          </svg>
 
         </div>
-
-
         <!--mobile  menu-->
         <div id="mobile-header" class="fixed top-0 bottom-0 -right-64 w-64 pt-3 px-4 min-h-screen bg-white dark:bg-zinc-700 z-20 transition-all duration-300 overflow-y-auto ">
             <div class="flex items-center justify-between pb-5 border-b border-b-gray-100 dark:border-b-white/10 ">
@@ -348,7 +344,6 @@
             </div>
 
         </div>
-
         <!--logo-->
         <div class="text-orange-300">
             <svg width="100" height="40" viewBox="0 0 138 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -442,12 +437,13 @@
             </div>
 
         </div>
+    
+    </div>
 
-    <main></main>
 
 
 
-<!--    <div class="overlay fixed inset-0 bg-black/40 w-full h-full z-10"></div>-->
+    <!--<div class="overlay fixed inset-0 bg-black/40 w-full h-full z-10"></div>-->
 
 
     <script src="../script/modules/wow.min.js"></script>
@@ -455,6 +451,20 @@
         new WOW().init();
     </script>
     <script src="../script/DarkMode.js"></script>
-    <script src="../script/script.js"></script>
+        <script src="../script/script.js"></script></div>
+
+    <main>
+        <section class="home h-[200px] xs:h-auto ">
+            <div class="container h-full md:my-20 flex justify-end items-center">
+                <div class="text-white mb-6 items-center">
+                    <h2 class="font-MorabbaBold text-2xl md:text-4xl lg:text-6xl mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
+                    <span class="font-MorabbaLight text-xl md:text-3xl lg:text-5xl">یک فنجان بالانس!</span>
+                    <span class="block w-[100px] h-px md:h-0.5 b bg-orange-300 my-3 md:my-8"></span>
+                    <p class="max-w-[201px] md:max-w-[460px] text-xs md:text-2xl">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
